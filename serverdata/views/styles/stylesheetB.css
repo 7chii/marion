@@ -1,0 +1,20 @@
+body{
+    background-image: url("/bgIndex");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    z-index: 0;
+}
+.menu{
+    background-color: white;
+    display: grid;
+    margin-left: 10%;
+    margin-top: 5%;
+    height: 80vh;
+    width: 80%;
+}
+.incase{
+    display: grid;
+    justify-content: left;
+    width: 8vw;
+}

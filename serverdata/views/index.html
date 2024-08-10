@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marion</title>
+    <!--styles-->
+    <link rel="stylesheet" href="styles">
+    <!--stend-->
+
+</head>
+<body>
+
+   <div class="logreg">
+    <span id="notice"></span>
+    <h1>login</h1>
+    <form action="#">
+        <label for="user">user</label><br>
+        <input type="text" id="user" name="user"><br>
+        <label for="passw">password</label><br>
+        <input type="text" id="passw" name="passw"><br>
+    </form>
+    <button onclick="login();">log</button>
+    <a href="/register">Im new here!</a>
+   </div>
+   <script>
+    //pegar user e senha por agora s/ sql
+    function login(){
+        var user = document.getElementById("user");
+        var passw = document.getElementById("passw");
+        if(user.value == "admin" && passw.value =="1234"){
+            document.location = "/menu";
+        }else{
+            var spanlog = document.getElementById("notice");
+            spanlog.style.display = "block";
+            spanlog.innerHTML = "user and/or passw are/is incorrect";
+        }
+    }
+   </script>
+
+</body>
+</html>

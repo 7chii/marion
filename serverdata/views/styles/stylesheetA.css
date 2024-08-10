@@ -1,0 +1,49 @@
+
+body{
+    background-image: url("/bgIndex");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    z-index: 0;
+}
+.logreg{
+    position:absolute;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    z-index: 1;
+    border-radius: 25px;
+    display:grid;
+    float: center;
+    width: 30%;
+    height: 98vh;
+    justify-content:center;
+
+    grid-template-rows: repeat(3, 1fr);
+    box-sizing: border-box;
+    align-items:center;
+    margin-top: 0px;
+    border:0px;
+    padding:0px;
+    h1{
+        margin-bottom:-150%;
+    }
+    a{
+        margin-top: -300%;
+        margin-left:10%;
+    }
+    button{
+        margin-left: 0%;
+        margin-top:-200%;
+    }
+}
+#reg{
+    margin-top: -100%;
+}
+#notice{
+    display: none;
+    position:absolute;
+    z-index: 4;
+    margin-top:-25%;
+    margin-left: 30%;
+    color: red;
+}
