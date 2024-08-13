@@ -1,20 +1,18 @@
-body{
-    background-image: url("/bgIndex");
-    background-size:cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    z-index: 0;
+#reg{
+    margin-top: -100%;
 }
-.menu{
-    background-color: white;
-    display: grid;
-    margin-left: 10%;
-    margin-top: 5%;
-    height: 80vh;
-    width: 80%;
+#notice{
+    display: none;
+    position:absolute;
+    z-index: 4;
+    margin-top:-25%;
+    margin-left: 30%;
+    color: red;
 }
-.incase{
-    display: grid;
-    justify-content: left;
-    width: 8vw;
+#logoInd{
+    width: 50vw;
+    position:fixed;
+    margin-left: 40%;
+    margin-top:15%;
+    filter:invert(100%);
 }

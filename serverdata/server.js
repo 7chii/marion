@@ -31,14 +31,31 @@ app.get('/styles', (req, res) => {
 app.get('/stylesB', (req, res) => {
     res.sendFile(path.join(__dirname, 'views/styles/stylesheetB.css'));
 });
+app.get('/calc', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views/styles/calc.css'));
+});
+app.get('/modal', (req,res)=>{
+    res.sendFile(path.join(__dirname,'views/styles/modal.css'));
+})
 //img bg login/reg
 app.get('/bgIndex', (req, res) => {
     res.sendFile(path.join(__dirname, 'views/bgIndex.png'));
+});
+app.get('/logo', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views/marionLogo.png'));
 });
 //menu
 app.get('/menu', (req, res) => {
     res.sendFile(path.join(__dirname, 'views/menu.html'));
 });
+
+app.post('/USECASE', (req, res)=>{
+    //mandar pro bd
+})
+app.get('/usep', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views/usep.html'));
+});
+
 //listen da porta 8080
 app.listen(port, () => {
     console.log(`api listening on port ${port}`);

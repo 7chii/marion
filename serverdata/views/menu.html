@@ -3,19 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles">
     <link rel="stylesheet" href="/stylesB">
+    <link rel="stylesheet" href="/modal">
     <title>Marion</title>
 </head>
 <body>
     <div class="incase">
-        <button>logout</button>
+        <button onclick="logout();">logout</button>
         <button>config</button>
     </div>
     <div class="menu">
-        <button>kumon</button>
-        <button>d'</button>
-        <button>integ</button>
-        <button>marion</button>
+        <button onclick="usep();slc.value='kumon';" id="kumon">kumon</button>
+        <button onclick="usep();slc.value='marion';" id="marion">marion</button>
     </div>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <form>
+            <select name="opts" id="opts">
+                <option value="kumon">kumon</option>
+                <option value="marion">marion</option>
+            </select>
+            <br>
+            <br>
+            <input type="checkbox" id="divs" name="divs">
+            <label for="divs">div</label>
+            <input type="checkbox" id="multi" name="multi">
+            <label for="multi">mult</label> <br>
+            <input type="checkbox" id="sum" name="sum">
+            <label for="sum">sum</label>
+            <input type="checkbox" id="sub" name="sub">
+            <label for="sub">subd</label>
+            <br>
+            <br>
+            <input type="checkbox" id="deriv" name="deriv">
+            <label for="deriv">derivatives</label>
+            <br>
+            <input type="checkbox" name="integ" id="integ">
+            <label for="integ">integrals</label>
+            <br>
+            <br>
+            <input type="text" name="lv" id="lv">
+            <label for="lv">diff</label>
+            <br>
+          </form>
+          <button onclick="u();">start</button>
+        </div>
+      
+      </div>
+    <script>
+        var modal = document.getElementById("myModal");
+        var span = document.getElementsByClassName("close")[0];
+        var slc = document.getElementById("opts");
+        function u(){
+            document.location = "/usep";
+        }
+        function logout(){
+            document.location = "/";
+        }
+        function usep(){
+            modal.style.display = "block";
+            
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+               modal.style.display = "none";
+             }
+        } 
+    </script>
 </body>
 </html>

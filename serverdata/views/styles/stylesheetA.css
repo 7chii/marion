@@ -6,6 +6,7 @@ body{
     height: 100%;
     z-index: 0;
 }
+
 .logreg{
     position:absolute;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -36,14 +37,36 @@ body{
         margin-top:-200%;
     }
 }
-#reg{
-    margin-top: -100%;
+.menu{
+    background-color: white;
+    display: grid;
+    margin-left: 10%;
+    margin-top: 5%;
+    height: 80vh;
+    width: 80%;
 }
-#notice{
-    display: none;
-    position:absolute;
-    z-index: 4;
-    margin-top:-25%;
-    margin-left: 30%;
-    color: red;
+.incase{
+    display: grid;
+    justify-content: left;
+    width: 8vw;
+}
+.block{
+    background-color: white;
+    float:center;
+    height: 95vh;
+    width: 50vw;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.exs{
+    margin:10%;
+}
+.bs+ .bs{
+    margin-left:0px;
+}
+.bs{
+    margin-left: 25%;
+    height: 5vh;
+    width: 25vw;
 }

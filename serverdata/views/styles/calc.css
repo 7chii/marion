@@ -1,0 +1,7 @@
+.calc{
+    width: 25vw;
+    height: 30vh;
+    float: left;
+    border-radius: 5px;
+    background-color:rgb(227, 227, 227);
+}
